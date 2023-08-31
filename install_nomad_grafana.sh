@@ -3,7 +3,8 @@
 # Install Docker
 sudo apt update
 sudo apt install -y docker.io
-sudo usermod -aG docker adika
+sudo usermod -aG docker ${USER}
+sudo usermod -aG docker ${USER}
 
 # Run Nomad container
 docker run -d --name=nomad \
